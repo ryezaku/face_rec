@@ -17,7 +17,7 @@ send the request to here to register the user:
 ```
 http://localhost:5000/selfie/photo/face/recognition
 ```
-##  example for registration of user
+##  example for json body
 ```
 
     {   
@@ -30,3 +30,24 @@ http://localhost:5000/selfie/photo/face/recognition
 ```
 - Icnumber is the id for the image owner, selfiePhotoPath1 is the first selfie image, and the selfiePhotoPath is the second selfie image
 - processImagePath is the path where cropped face region is saved.
+
+##  example for json body
+- the response will be:
+ ```
+
+    {   
+        
+    "errorMessage": null,
+    "facerecResult": {
+        "sameFace": false,
+        "similarityScore": 59.38,
+        "faceCondition": "GOOD"
+    },
+    "processTime": 14.41
+
+
+    }
+```
+
+- the sameFace is the bollean whether the person is same or not, similarity score is the magnitude of the face similarities in percentage. if it is more than 65% than it will be identified as same person.
+- faceCondition is the status of the image, whether there is multiple faces detected, no face detected. 
