@@ -1,0 +1,5 @@
+2022-10-11 16:53:34 INFO uvicorn.error MainThread : Started server process [33772]
+2022-10-11 16:53:34 INFO uvicorn.error MainThread : Waiting for application startup.
+2022-10-11 16:53:34 INFO uvicorn.error MainThread : Application startup complete.
+2022-10-11 16:53:34 INFO uvicorn.error MainThread : Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-11 16:54:03 INFO root AnyIO worker thread : Starting face recognition logging for 1
