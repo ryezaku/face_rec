@@ -77,7 +77,7 @@ class FaceRecognitionService:
 		start = time.time()
 		makeDirectories = commons.makeDirectories(jsonInput)
 		selfiePhotoPath = jsonInput['selfiePhotoPath']
-		idCardPath = jsonInput['frontIcImagePath']
+		idCardPath = jsonInput['selfiePhotoPath1']
 		inputIcNumber = jsonInput['icNumber']
 		frontIcImage = cv2.imread(idCardPath)
 		faceSimilaritiesMinPercentage = 0

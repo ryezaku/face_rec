@@ -30,7 +30,7 @@ faceRecognitionService = FaceRecognitionService()
 def faceImageRecognition(inputRequest:JsonInputFr):
 	jsonInput = {}
 	jsonInput['icNumber'] = inputRequest.icNumber
-	jsonInput['frontIcImagePath'] = inputRequest.frontIcImagePath
+	jsonInput['selfiePhotoPath1'] = inputRequest.frontIcImagePath
 	jsonInput['selfiePhotoPath'] = inputRequest.selfiePhotoPath
 	jsonInput['processImagePath'] = inputRequest.processImagePath
 	if inputRequest.faceSimilaritiesMinPercentage is not None:
