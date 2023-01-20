@@ -26,7 +26,7 @@ logging.basicConfig(level=logging.INFO, format=f'%(asctime)s %(levelname)s %(nam
 
 app = FastAPI()
 faceRecognitionService = FaceRecognitionService()
-@app.post('/selfie/photo/face/recognition')
+@app.post('/face/recognition')
 def faceImageRecognition(inputRequest:JsonInputFr):
 	jsonInput = {}
 	jsonInput['name'] = inputRequest.icNumber
