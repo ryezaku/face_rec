@@ -13,7 +13,7 @@ from FR import constant
 from pydantic import BaseModel
 
 class JsonInputFr(BaseModel):
-	icNumber: str
+	name: str
 	frontIcImagePath:str
 	selfiePhotoPath: str
 	processImagePath:str
@@ -29,13 +29,13 @@ faceRecognitionService = FaceRecognitionService()
 @app.post('/selfie/photo/face/recognition')
 def faceImageRecognition(inputRequest:JsonInputFr):
 	jsonInput = {}
-	jsonInput['icNumber'] = inputRequest.icNumber
+	jsonInput['name'] = inputRequest.icNumber
 	jsonInput['selfiePhotoPath1'] = inputRequest.frontIcImagePath
 	jsonInput['selfiePhotoPath'] = inputRequest.selfiePhotoPath
 	jsonInput['processImagePath'] = inputRequest.processImagePath
 	if inputRequest.faceSimilaritiesMinPercentage is not None:
 		jsonInput['faceSimilaritiesMinPercentage'] = inputRequest.faceSimilaritiesMinPercentage
-	logging.info('Starting face recognition logging for ' + jsonInput['icNumber'])
+	logging.info('Starting face recognition logging for ' + jsonInput['name'])
 	croppedImagePath = {}
 	faceRecognitionResponse = FaceRecognitionService.startFaceRecognition(jsonInput, faceRecognitionService,pathRecord, croppedImagePath)
 	return faceRecognitionResponse
