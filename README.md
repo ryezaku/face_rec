@@ -21,7 +21,7 @@ http://localhost:5000/selfie/photo/face/recognition
 ```
 
     {   
-        "icNumber": "1",
+        "name": "haziq",
         "selfiePhotoPath1": "C:\\Users\\user\\Downloads\\Telegram Desktop\\selfie.jpeg",
         "processImagePath" :"C:\\Users\\user\\Downloads\\Telegram Desktop\\oke",
         "selfiePhotoPath" :"C:\\Users\\user\\Downloads\\Telegram Desktop\\New folder\\selfie.jpeg"
