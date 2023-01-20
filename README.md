@@ -15,7 +15,7 @@ INFO:     Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
 We require the access token to  be included in the postman in order to use the api
 send the request to here to register the user:
 ```
-http://localhost:5000/selfie/photo/face/recognition
+http://localhost:5000/face/recognition
 ```
 ##  example for json body
 ```
