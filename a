@@ -1,0 +1,10 @@
+C:\Users\user\anaconda3
+C:\Users\user\anaconda3\Library\mingw-w64\bin
+C:\Users\user\anaconda3\Library\usr\bin
+C:\Users\user\anaconda3\Library\bin
+C:\Users\user\anaconda3\Scripts
+
+
+grid search, random search
+
+python train.py --img 640 --batch 1 --epochs 100 --data coco128.yaml --weights yolov5m.pt

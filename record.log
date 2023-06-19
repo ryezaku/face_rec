@@ -3,3 +3,14 @@
 2022-10-11 16:53:34 INFO uvicorn.error MainThread : Application startup complete.
 2022-10-11 16:53:34 INFO uvicorn.error MainThread : Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
 2022-10-11 16:54:03 INFO root AnyIO worker thread : Starting face recognition logging for 1
+2022-10-11 17:06:59 INFO uvicorn.error MainThread : Shutting down
+2022-10-11 17:06:59 INFO uvicorn.error MainThread : Finished server process [33772]
+2022-10-11 17:06:59 ERROR uvicorn.error MainThread : Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\envs\ekyc\lib\site-packages\starlette\routing.py", line 624, in lifespan
+    await receive()
+  File "C:\Users\user\anaconda3\envs\ekyc\lib\site-packages\uvicorn\lifespan\on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "C:\Users\user\anaconda3\envs\ekyc\lib\asyncio\queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
